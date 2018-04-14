@@ -9,3 +9,5 @@ cd rstudio_server_docker
 docker build . -t rstudio_server
 docker container run --rm -p 8787:8787 -v $(pwd):/home/rstudio -w /home/rstudio -d rstudio_server
 ```
+
+Note that for RstudioServer the username and password can be any user of the system (but in this case the container which only has the user "ubuntu", so just ubuntu:ubuntu)
